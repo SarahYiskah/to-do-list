@@ -6,7 +6,11 @@ const JobSchema =  new Schema({
   name: {
     type: String,
     required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 })
 
-modeule.exports = Job = mongoose.model('job', JobSchema)
+module.exports = Job = mongoose.model('job', JobSchema)

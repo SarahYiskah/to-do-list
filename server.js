@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const jobs = require('./routes/api/jobs')
 
 //initialize express
 const app = express()
@@ -18,3 +19,6 @@ mongoose.connect(db)
 
   const port = process.env.PORT || 5000
   app.listen(port, () => console.log(`Server started on port ${port}`))
+
+  //use routes
+  app.use('/api/jobs', jobs)
