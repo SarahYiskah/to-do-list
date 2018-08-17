@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux'
+import store from './store'
 import './App.css';
+import List from './components/List'
 
 class App extends Component {
   render() {
     return (
-      <div>
-      <h2>To Do List</h2>
-      </div>
+      <Provider store={store}>
+      <List />
+      </Provider>
     );
   }
 }
