@@ -1,5 +1,50 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
+  color: #EB8442;
+  background-color: #A1CBC4;
 }
+
+#root, #list {
+  height: 100%;
+}
+
+input {
+  background-color: #A1CBC4;
+  display: block;
+  margin: 10% auto;
+  height: 5%;
+  width: 80%;
+  font-size: 1.5em;
+  color: #EB8442;
+  border: none;
+  padding: 2%;
+  -moz-box-shadow: 0 2px 4px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 0 2px 4px rgba(68, 68, 68, 0.6);
+  box-shadow: 0 2px 4px rgba(68, 68, 68, 0.6);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+div.listItem {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+
+/*
+mint: background color: #A1CBC4
+orange: second color: #EB8442
+cream: basic color: #F8E6E0
+*/
